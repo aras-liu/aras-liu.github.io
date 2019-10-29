@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Java Test | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="基础知识1.JDK 和 JRE 有什么区别？ JDK是java DevelopMent Kit 的简称，开发java应用时需要安装，包含一些开发使用的工具，jar Java javac jre等 JRE Java runtime environment 表示Java运行时的环境，包含Java虚拟机（jvm）和基础类  2.== 和 equals 的区别是什么？ 当一个对象没有重写equals方法时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java Test">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;10&#x2F;23&#x2F;Java-Test&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基础知识1.JDK 和 JRE 有什么区别？ JDK是java DevelopMent Kit 的简称，开发java应用时需要安装，包含一些开发使用的工具，jar Java javac jre等 JRE Java runtime environment 表示Java运行时的环境，包含Java虚拟机（jvm）和基础类  2.== 和 equals 的区别是什么？ 当一个对象没有重写equals方法时">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-24T12:06:05.000Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Java-Test" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/23/Java-Test/" class="article-date">
+  <time datetime="2019-10-23T12:24:02.000Z" itemprop="datePublished">2019-10-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Java Test
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><h3 id="1-JDK-和-JRE-有什么区别？"><a href="#1-JDK-和-JRE-有什么区别？" class="headerlink" title="1.JDK 和 JRE 有什么区别？"></a>1.JDK 和 JRE 有什么区别？</h3><ul>
+<li>JDK是java DevelopMent Kit 的简称，开发java应用时需要安装，包含一些开发使用的工具，jar Java javac jre等</li>
+<li>JRE Java runtime environment 表示Java运行时的环境，包含Java虚拟机（jvm）和基础类</li>
+</ul>
+<h3 id="2-和-equals-的区别是什么？"><a href="#2-和-equals-的区别是什么？" class="headerlink" title="2.== 和 equals 的区别是什么？"></a>2.== 和 equals 的区别是什么？</h3><ul>
+<li>当一个对象没有重写equals方法时，这两者是相同的</li>
+<li>反之，不相同，==表示地址相同，或者基本数据类型的值相同</li>
+<li>基本数据类型存储在栈中，如果两个值相等，表示：这两个值所指向的地址也相同</li>
+</ul>
+<h2 id="3-两个对象的-hashCode-相同，则-equals-也一定为-true，对吗？"><a href="#3-两个对象的-hashCode-相同，则-equals-也一定为-true，对吗？" class="headerlink" title="3.两个对象的 hashCode()相同，则 equals()也一定为 true，对吗？"></a>3.两个对象的 hashCode()相同，则 equals()也一定为 true，对吗？</h2><ul>
+<li>hashCode相同不代表 equals相同。但是equals相同时，很大程度上Hashcode也会相同。</li>
+<li>在HashMap中，原则是先根据HashCode进行分类，然后在根据equals方法进行对比相等，如果两个对象的equals相同，则必须HashCode也相同，所以如果对象的equals方法被重写了，HashCode方法也要被重写，保证一致。</li>
+<li>但是不是所有的类都遵守这个原则，因此这两个方法也可能没有关系。</li>
+<li>在Object类中，equals 方法是 对象的引用地址，hashCode是对象的引用地址（或字符串）计算的值</li>
+</ul>
+<h2 id="4-final-在-java-中有什么作用？"><a href="#4-final-在-java-中有什么作用？" class="headerlink" title="4.final 在 java 中有什么作用？"></a>4.final 在 java 中有什么作用？</h2><ul>
+<li>修饰类中的变量：被final修饰的变量值不能变，引用对象的属性可以修改<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//p 不能再被赋值</span></span><br><span class="line"><span class="keyword">final</span> Person p= <span class="keyword">new</span> Person(<span class="string">"Tom"</span>);</span><br><span class="line">p.setName(<span class="string">"json"</span>); <span class="comment">//可以改变p的属性</span></span><br></pre></td></tr></table></figure></li>
+<li>修饰类中的方法：类可以被继承，该方法不可以被重写</li>
+<li>修饰类：类不可以被继承</li>
+</ul>
+<h3 id="5-java-中的-Math-round-1-5-等于多少？"><a href="#5-java-中的-Math-round-1-5-等于多少？" class="headerlink" title="5.java 中的 Math.round(-1.5) 等于多少？"></a>5.java 中的 Math.round(-1.5) 等于多少？</h3><pre><code>答：-1
+坐标轴  ---+-------+---------+
+        -2  -1.5 -1         0
+round是四舍五入  ：向右侧入
+Math.cell(-1.5)= -1 进1
+Math.tail(-1,5)= -2 退1</code></pre><h3 id="6-String-属于基础的数据类型吗？"><a href="#6-String-属于基础的数据类型吗？" class="headerlink" title="6.String 属于基础的数据类型吗？"></a>6.String 属于基础的数据类型吗？</h3><pre><code>答：不属于，
+基本数据类型共有8个：
+整数：int（4）,long（8）,short（2）,
+浮点数：float（4）,double（8）,
+字符：char（1）,byte（1）,
+逻辑：boolean（1bit）</code></pre><h3 id="7-java-中操作字符串都有哪些类？它们之间有什么区别？"><a href="#7-java-中操作字符串都有哪些类？它们之间有什么区别？" class="headerlink" title="7.java 中操作字符串都有哪些类？它们之间有什么区别？"></a>7.java 中操作字符串都有哪些类？它们之间有什么区别？</h3><ul>
+<li>String 使用final修饰，每次修改得到的都是new String</li>
+<li>StringBuffer 线程安全，对字符串的操作都加了synchronized</li>
+<li>StringBuilder 线程不安全，单线程效率高</li>
+</ul>
+<h3 id="8-String-str-”i”与-String-str-new-String-“i”-一样吗？"><a href="#8-String-str-”i”与-String-str-new-String-“i”-一样吗？" class="headerlink" title="8.String str=”i”与 String str=new String(“i”)一样吗？"></a>8.String str=”i”与 String str=new String(“i”)一样吗？</h3><ul>
+<li>不一样，str=”i”,先在常量池中查找，如果找不到则创建一个“i”，然后返回常量池中的地址</li>
+<li>new String(“i”),则是在堆中创建一个空间。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String a=<span class="string">"abc"</span></span><br><span class="line">String b=<span class="string">"abc"</span></span><br><span class="line">System.out.println(a==b)<span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="9-如何将字符串反转？"><a href="#9-如何将字符串反转？" class="headerlink" title="9.如何将字符串反转？"></a>9.如何将字符串反转？</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String str = <span class="string">"abcdefg"</span>;</span><br><span class="line">str = <span class="keyword">new</span> StringBuffer(str).reverse().toString()</span><br></pre></td></tr></table></figure>
+
+<h3 id="10-String-类的常用方法都有那些？"><a href="#10-String-类的常用方法都有那些？" class="headerlink" title="10.String 类的常用方法都有那些？"></a>10.String 类的常用方法都有那些？</h3><ul>
+<li>getBytes()</li>
+<li>toCharArray()</li>
+<li>charAt()</li>
+<li>concat()</li>
+<li>length()</li>
+<li>substring()</li>
+<li>equals()</li>
+<li>compareTo()</li>
+<li>indexOf()</li>
+<li>toLowerCase()</li>
+<li>toUpperCase()</li>
+<li>replace()</li>
+<li>replaceFirst()</li>
+<li>replaceAll()</li>
+<li>trim()</li>
+<li>startsWith()</li>
+<li>endsWith()</li>
+<li>contains（）</li>
+<li>split()</li>
+<li>parseInt()</li>
+<li>valueOf()</li>
+</ul>
+<h3 id="11-抽象类必须要有抽象方法吗？"><a href="#11-抽象类必须要有抽象方法吗？" class="headerlink" title="11.抽象类必须要有抽象方法吗？"></a>11.抽象类必须要有抽象方法吗？</h3><ul>
+<li>抽象类中可以没有抽象方法，但是抽象类不可以被实例化，即使是所有的类都被实现了也不行。但是方法如果被static修饰了，那么可以通过类直接调用静态方法。</li>
+</ul>
+<h3 id="12-普通类和抽象类有哪些区别？"><a href="#12-普通类和抽象类有哪些区别？" class="headerlink" title="12.普通类和抽象类有哪些区别？"></a>12.普通类和抽象类有哪些区别？</h3><ul>
+<li>普通类可以被实例化调用；抽象类不可以被实例化调用，因为抽象类存在于一种概念而非实体。</li>
+<li>普通类和抽象类都可以被继承</li>
+<li>抽象类被继承后一定要重写抽象方法，除非本身也是抽象类。</li>
+<li>普通类可以继承一个类（抽象类或普通类），实现多个接口</li>
+</ul>
+<h3 id="13-抽象类能使用-final-修饰吗？"><a href="#13-抽象类能使用-final-修饰吗？" class="headerlink" title="13.抽象类能使用 final 修饰吗？"></a>13.抽象类能使用 final 修饰吗？</h3><ul>
+<li>不能 ，抽象类是用来被继承，但是final修饰的类不能被继承，有矛盾</li>
+</ul>
+<h3 id="14-接口和抽象类有什么区别？"><a href="#14-接口和抽象类有什么区别？" class="headerlink" title="14.接口和抽象类有什么区别？"></a>14.接口和抽象类有什么区别？</h3><ul>
+<li>相同点<ul>
+<li>都不可以被实例化调用，</li>
+<li>如果要实例化必须，抽象类对象必须指向实现所有抽象方法的子类，接口对象必须指向实现所有接口方法的类对象</li>
+</ul>
+</li>
+<li>不同点<ul>
+<li>抽象类被继承，接口被实现</li>
+<li>抽象类中可以没有抽象方法</li>
+<li>接口中的变量只能是公共的静态常量，抽象类中的变量是普通变量</li>
+<li>接口可以被多实现，抽象类只能被单继承</li>
+<li>接口中没有 this,没有构造函数，不能有实例变量和实例方法</li>
+</ul>
+</li>
+</ul>
+<h3 id="15-java-中-IO-流分为几种？"><a href="#15-java-中-IO-流分为几种？" class="headerlink" title="15.java 中 IO 流分为几种？"></a>15.java 中 IO 流分为几种？</h3><ul>
+<li>字节流 先到缓冲区 然后在到文件</li>
+<li>字符流 直接到文件</li>
+</ul>
+<h3 id="16-BIO、NIO、AIO-有什么区别？"><a href="#16-BIO、NIO、AIO-有什么区别？" class="headerlink" title="16.BIO、NIO、AIO 有什么区别？"></a>16.BIO、NIO、AIO 有什么区别？</h3><ul>
+<li>BIO同步阻塞：线程发起请求，不管IO是否准备好，线程发起请求后一直阻塞挂起</li>
+<li>NIO同步非阻塞：线程发起请求后返回，等到IO准备好后通知线程，然后线程阻塞直到结束</li>
+<li>AIO异步非阻塞：线程发起请求后返回，</li>
+</ul>
+<p>17.Files的常用方法都有哪些？</p>
+<p>18.finally方法什么被执行</p>
+<h3 id="19-线程的运行状态"><a href="#19-线程的运行状态" class="headerlink" title="19.线程的运行状态"></a>19.线程的运行状态</h3><ul>
+<li>初始状态：实现Runnable接口 或者继承Thread后得到一个线程类，通过new一个实例后就是初始状态</li>
+<li>就绪状态：<ul>
+<li>有资格运行的状态</li>
+<li>调用start（）方法，此线程就进入就绪状态</li>
+<li>当前线程sleep结束后，其他线程join后，等待用户输入，其他线程拿到对象锁，这些线程进入就绪状态</li>
+<li>当前线程时间片用完</li>
+<li><h3 id="树的度数"><a href="#树的度数" class="headerlink" title="树的度数"></a>树的度数</h3></li>
+</ul>
+</li>
+<li>指的是树的叶子数，二叉树的度为&lt;=2</li>
+</ul>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><ul>
+<li>java中的继承存在着传递性</li>
+<li>父类更具通用性，子类更具体</li>
+<li>当实例化子类时，会递归调用父类的构造方法</li>
+</ul>
+<h3 id="java-反射机制"><a href="#java-反射机制" class="headerlink" title="java 反射机制"></a>java 反射机制</h3><h3 id="线程-start-join-yield"><a href="#线程-start-join-yield" class="headerlink" title="线程 start join yield"></a>线程 start join yield</h3><p>二、容器</p>
+<p>18.java 容器都有哪些？</p>
+<p>19.Collection 和 Collections 有什么区别？</p>
+<p>20.List、Set、Map 之间的区别是什么？</p>
+<p>21.HashMap 和 Hashtable 有什么区别？</p>
+<p>22.如何决定使用 HashMap 还是 TreeMap？</p>
+<p>23.说一下 HashMap 的实现原理？</p>
+<p>24.说一下 HashSet 的实现原理？</p>
+<p>25.ArrayList 和 LinkedList 的区别是什么？</p>
+<p>26.如何实现数组和 List 之间的转换？</p>
+<p>27.ArrayList 和 Vector 的区别是什么？</p>
+<p>28.Array 和 ArrayList 有何区别？</p>
+<p>29.在 Queue 中 poll()和 remove()有什么区别？</p>
+<p>30.哪些集合类是线程安全的？</p>
+<p>31.迭代器 Iterator 是什么？</p>
+<p>32.Iterator 怎么使用？有什么特点？</p>
+<p>33.Iterator 和 ListIterator 有什么区别？</p>
+<p>34.怎么确保一个集合不能被修改？</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/23/Java-Test/" data-id="ck2bszll00001phog77fahkzx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/10/23/flow/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          flow
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/10/23/Hello-World-0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/10/23/flow/">flow</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/23/Java-Test/">Java Test</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/23/Hello-World-0/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
